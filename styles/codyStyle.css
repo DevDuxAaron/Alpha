@@ -1,3 +1,4 @@
+/*Estilo de tipografía y default en 0*/
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
     list-style: none;
 }
 
+/*Estilos generales del body*/
 body{
     background-color: #30336b;
     min-height: 100vh;
@@ -14,6 +16,7 @@ body{
     align-items: center;
 }
 
+/*Estilos de las tarjetas de respuesta*/
 .question-table{
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +55,7 @@ body{
     box-shadow: 0 0 0 26em #0fbcf9;
 }
 
+/*Estilo de la opcion de respuesta*/
 .answer{
     font-size: 70px;
     color: #0fb6f9;
@@ -64,6 +68,7 @@ body{
     font-weight: 700;
 }
 
+/*Correcion de detalles en la tarjeta de respuesta*/
 .question-card:hover, .question-card:hover .answer{
     color: #ffffff;
 }
@@ -74,6 +79,7 @@ body{
     text-transform: uppercase;
 }
 
+/*Estilos del boton de seleccion*/
 .order-btn{
     display: inline-block;
     margin-bottom: 40px;
@@ -91,3 +97,4 @@ body{
     background-color: #0fb6f9;
     color: #ffffff;
 }
+/*Ahora eres feliz Mgnt Stainer???*/
