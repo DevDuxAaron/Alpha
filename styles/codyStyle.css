@@ -10,9 +10,16 @@
 body{
     background-color: #30336b;
     min-height: 100vh;
-    display: flex;
     align-items: center;
 }
+
+.statement{
+    color: #ffffff;
+    display: inline-block;
+}
+/* .statement-header{
+
+} */
 
 .question-table{
     display: flex;
