@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca</title>
+	<meta charset="utf-8"/>
+	<title>Biblioteca</title>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="mgntSteinerStyle.css">
 </head>
 <body>
-    
+	<div class="tittle">
+		<div class="nav-wrapper">
+
+			<div class="left-side">
+
+				<div class="nav-link-wrapper">
+					<a href="index">Home </a>
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="biblioteca.html">Biblioteca</a>
+				</div>
+			</div>
+			
+			<div class="right-side">
+				<div class="name">
+					<div>Nombre de la escuela</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="content-wrapper">
+			
+			<div class="portfolio-items-wrapper">
+				<div class="portfolio-item-wrapper">
+
+					<div class="portfolio-img-background" style="background-image:url(imagesMgntSteiner/img_1_biblioteca_mgntSteiner.png)">
+					</div>
+
+					<div class="img-text-wrapper">
+						
+						<div class="logo-wrapper">
+							<img src="imagesMgntSteiner/logo/logo_2.png" height="150px" width="100px">
+						</div>
+						
+						<div class="subtitle">
+							AQUI PONDEMOS PONER LA LISTA DE ENLACES?
+							
+						</div>
+
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(imagesMgntSteiner/img_2_biblioteca_mgntSteiner.jpg)">
+					</div>
+
+					<div class="img-text-wrapper">
+						
+						<div class="logo-wrapper">
+							<img src="imagesMgntSteiner/logo/logo_2.png" height="150px" width="100px">
+						</div>
+						
+						<div class="subtitle">
+							AQUI PONDEMOS PONER LA LISTA DE ENLACES?
+							
+						</div>
+
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(imagesMgntSteiner/img_3_biblioteca_mgntSteiner.jpg)">
+					</div>
+
+					<div class="img-text-wrapper">
+						
+						<div class="logo-wrapper">
+							<img src="imagesMgntSteiner/logo/logo_2.png" height="150px" width="100px">
+						</div>
+						
+						<div class="subtitle">
+							AQUI PONDEMOS PONER LA LISTA DE ENLACES?
+							
+						</div>
+
+					</div>
+				</div>
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(imagesMgntSteiner/img_4_biblioteca_mgntSteiner.jpg)">
+					</div>
+
+					<div class="img-text-wrapper">
+						
+						<div class="logo-wrapper">
+							<img src="imagesMgntSteiner/logo/logo_2.png" height="150px" width="100px">
+						</div>
+						
+						<div class="subtitle">
+							AQUI PONDEMOS PONER LA LISTA DE ENLACES?
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
 </body>
+<script>
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+
+	portfolioItems.forEach(portfolioItem => {
+		portfolioItem.addEventListener('mouseover',()=>{
+		
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+
+		portfolioItem.addEventListener('mouseout',()=>{
+			
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
 </html>
