@@ -15,14 +15,20 @@ body{
     align-items: center;
 }
 
-<<<<<<< HEAD
 .statement{
-    color: #ffffff;
-    display: inline-block;
+    color: #0fb6f9;
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 3%;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
 }
-/* .statement-header{
 
-} */
+.statement-content{
+    padding: 2%;
+}
 
 .question-table{
     display: flex;
@@ -36,6 +42,7 @@ body{
 .question-card{
     flex: 1;
     max-width: 360px;
+    max-height: 400px;
     border-radius: 5px;
     background-color: #ffffff;
     margin: 20px 10px;
@@ -50,7 +57,7 @@ body{
     background-color: #0fb6f9;
     display: inline-block;
     color: #ffffff;
-    padding: 12px 30px;
+    padding: 3% 10%;
     border-radius: 0 0 20px 20px;
     font-size: 16px;
     text-transform: uppercase;
@@ -59,19 +66,19 @@ body{
 }
 
 .question-card:hover .question-card-header{
-    box-shadow: 0 0 0 26em #0fbcf9;
+    box-shadow: 0 0 0 17em #0fbcf9;
 }
 
 /*Estilo de la opcion de respuesta*/
 .answer{
     font-size: 70px;
     color: #0fb6f9;
-    margin: 40px 0;
+    margin: 15% 0;
     transition: .2s linear;
 }
 
 .answer sup, .answer span{
-    font-size: 22px;
+    font-size: 25%;
     font-weight: 700;
 }
 
@@ -81,19 +88,19 @@ body{
 }
 
 .question-card li{
-    font-size: 16px;
-    padding: 10px 0;
+    font-size: 95%;
+    padding: 5% 0;
     text-transform: uppercase;
 }
 
 /*Estilos del boton de seleccion*/
 .order-btn{
     display: inline-block;
-    margin-bottom: 40px;
-    margin-top: 80px;
+    margin-bottom: 12%;
+    margin-top: 30%;
     border: 2px solid #0fb6f9;
     color: #0fb6f9;
-    padding: 18px 40px;
+    padding: 5% 10%;
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: 500;
@@ -105,3 +112,16 @@ body{
     color: #ffffff;
 }
 /*Ahora eres feliz Mgnt Stainer???*/
+.statement-header{
+    padding: 1% 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .question-table{
+        color: red;
+        display: inline-block;
+    }
+    .question-card:hover .question-card-header{
+        box-shadow: 0 0 0 13em #0fbcf9;
+    }
+}

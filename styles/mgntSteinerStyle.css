@@ -56,6 +56,11 @@ body{
 	position: relative;
 }
 
+.portfolio-item-wrapper:hover{
+	transition: 1s;
+	filter: brightness(10%);	
+}
+
 .portfolio-img-background{
 	height: 350px;
 	width: 100%;
@@ -90,11 +95,4 @@ body{
 .img-text-wrapper:hover .subtitle{
 	font-weight: 600;
 	color: white; 
-}
-
-.img-darken{
-	transition: 1s;
-	filter: brightness(10%);
-
-
 }
